@@ -37,7 +37,7 @@ I did some CPU bound operation and switching the CPU(CORE) after some work.
 demo.py
 ```python
 for i_ in xrange(affinity.NO_OF_CPU):
-            os.sched_setaffinity(0,[i_])
+            affinity.sched_setaffinity(0,[i_])
             for j_ in xrange(2500,6000):
                 j_ ** j_
 ```
