@@ -34,4 +34,23 @@ or
 
 sudo pip install cpu_affinity
 
+For demo, I did some CPU bound operation and switching the CPU(CORE) after some work.
+
+demo.py
+for i_ in xrange(affinity.NO_OF_CPU):
+            os.sched_setaffinity(0,[i_])
+            for j_ in range(2500,6000):
+                j_ ** j_
+
+CPU profiling of demo.py , different cores are fully utilized after an interval.
+
 ![alt tag](https://raw.githubusercontent.com/algodirect/affinity/master/affinity/src/test/demo.png)
+
+
+
+
+
+
+
+
+
