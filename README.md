@@ -5,7 +5,7 @@ This is to support set/get CPU affinity in python2.
 
 
 Uagse:-
-------------------
+---------
 
 Note: This package is not required for python 3.*
 
@@ -26,15 +26,18 @@ import affinity
 os.sched_setaffinity(0)  
 
 Installation:-
-------------------
+---------
 
-sudo easy_install cpu_affinity
+#sudo easy_install cpu_affinity
 
 or
 
-sudo pip install cpu_affinity
+#sudo pip install cpu_affinity
 
-For demo, I did some CPU bound operation and switching the CPU(CORE) after some work.
+Demo:-
+---------
+
+I did some CPU bound operation and switching the CPU(CORE) after some work.
 
 demo.py
 for i_ in xrange(affinity.NO_OF_CPU):
