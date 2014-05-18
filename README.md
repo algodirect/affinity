@@ -11,7 +11,7 @@ Note: This package is not required for python 3.*
 
 To set/get process's CPU affinity.
 
-```
+```python
 import affinity
 affinity.sched_getaffinity(0) # parameter is PID, use 0 for current process
 
@@ -22,7 +22,7 @@ affinity.sched_setaffinity(0, [0,2]) # first parameter is PID, use 0 for current
 
 Ex:-
 
-```
+```python
 import os
 import affinity
 os.sched_setaffinity(0)  
@@ -30,13 +30,15 @@ os.sched_setaffinity(0)
 
 Installation:-
 ---------
-
+```bash
 sudo easy_install cpu_affinity
+```
 
 or
 
+```bash
 sudo pip install cpu_affinity
-
+```
 Demo:-
 ---------
 
